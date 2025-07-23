@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     button.addEventListener("click", () => {
         document.body.classList.toggle("dark-mode");
-
+        // Update button text based on current theme
         // Save user preference
         const isDark = document.body.classList.contains("dark-mode");
         localStorage.setItem("theme", isDark ? "dark" : "light");
