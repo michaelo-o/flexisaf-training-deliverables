@@ -172,7 +172,7 @@ footer a:hover {
 .form-section h2 {
     font-size: 1.5rem;
     margin-bottom: 16px;
-    color: black;
+    color: black !important;
 }
 
 form label {
