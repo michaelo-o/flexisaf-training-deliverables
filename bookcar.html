@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Test Drive - SpeedDrive Motors</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Book a Test Drive</h1>
+
+        <nav>
+            <a href="/">Home</a> |
+            <a href="about.html">About Us</a> |
+            <a href="inventory.html">Our Cars</a> |
+            <a href="contact.html">Contact</a> |
+            <a href="bookcar.html">Book a Car</a>
+        </nav>
+
+        <hr>
+    </header>
+
+    <button id="toggle-theme">🌙 Dark Mode</button>
+
+    <main>
+        <section class="form-section">
+            <h2>Choose Your Car</h2>
+
+            <form action="https://formsubmit.co/7c6684e489dc4ec9acff00ac07af177d" method="POST">
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" required><br><br>
+
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="e.g., 08012345678"
+                    required><br><br>
+
+                <label for="car-select">Select a Car:</label><br>
+                <select id="car-select" name="car-select" required>
+                    <option value="">--Choose a Car--</option>
+                    <option value="camry">2021 Toyota Camry</option>
+                    <option value="bmwx5">2022 BMW X5</option>
+                    <option value="teslam3">2023 Tesla Model 3</option>
+                </select><br><br>
+
+                <label for="testdrive-date">Preferred Test Drive Date:</label><br>
+                <input type="date" id="testdrive-date" name="testdrive-date" required><br><br>
+
+                <label for="time">Preferred Time:</label><br>
+                <input type="time" id="time" name="time"><br><br>
+
+                <label>Transmission Preference:</label><br>
+                <input type="radio" id="auto" name="transmission" value="automatic" required>
+                <label for="auto">Automatic</label><br>
+                <input type="radio" id="manual" name="transmission" value="manual" required>
+                <label for="manual">Manual</label><br><br>
+
+                <label for="notes">Additional Notes:</label><br>
+                <textarea id="notes" name="notes" rows="4" cols="40"
+                    placeholder="Any specific requests or questions..."></textarea><br><br>
+
+                <input type="submit" value="Submit Booking">
+            </form>
+
+            <!-- <p id="confirmation">Thank you! Your booking has been submitted.</p> -->
+        </section>
+    </main>
+    
+    <footer>
+        <hr>
+        <p>&copy; 2025 SpeedDrive Motors. All rights reserved.</p>
+        <p>Follow us on:
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">LinkedIn</a>
+        </p>
+      </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
